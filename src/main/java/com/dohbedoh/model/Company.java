@@ -15,10 +15,13 @@ public class Company {
     @GeneratedValue
     @Column(name = "COMPANY_ID", precision = 5, scale = 0)
     private int companyId;
+
     @Column(name = "COMPANY_NAME", length = 32, nullable = false)
     private String companyName;
+
     @Column(name = "COMPANY_ADDRESS_ID", precision = 5, scale = 0, nullable = false)
     private int addressId;
+
     @Column(name = "COMPANY_CONTACT_ID", precision = 5, scale = 0, nullable = false)
     private int contactId;
 
